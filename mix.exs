@@ -55,7 +55,7 @@ defmodule Phoenix.Mixfile do
   defp deps do
     [
       cowboy_dep(System.get_env("COWBOY_VERSION")),
-      {:plug, "~> 1.4"},
+      {:plug, "~> 1.4", override: true},
       {:phoenix_pubsub, "~> 1.0"},
       {:poison, "~> 2.2 or ~> 3.0"},
       {:gettext, "~> 0.8", only: :test},
